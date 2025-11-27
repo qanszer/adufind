@@ -1,0 +1,57 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+    font-family: 'Geist';
+ }
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	user-select: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+[id] { 
+	scroll-margin-top: 150px; 
+}
+
+body {
+        background-image: url(./assets/v2-resized-blur-adu-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 105vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+.hero.container {
+    display: flex;
+    padding: 5%;
+}
+
+.hero .logo{
+    position: center center;
+    size: contain;
+    
+}

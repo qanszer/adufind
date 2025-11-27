@@ -5,13 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="AduFind" content="Adamson University's lost and found system. Reach out to us here to retrieve your lost item.">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geist">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geist|Open+Sans">
   <title></title>
 </head>
 <body>
+    <div class="navbar">
+        <div class="left">
+            <a>
+                <img src="./assets/adulogo-only.png">
+                Adu Find
+            </a>
+        </div>
+
+        <div id="mySidenav" class="right sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        <span onclick="openNav()">
+            <img src="./assets/menu.svg">
+        </span>
+  </div>
     <div class="hero container">
-        <img class="logo" src="./assets/adulogo-white.png">
+        <div class="title">AdU Find</div>
+        <div class="subtitle">Adamson University</div>
+
     </div>
 
+    <script src="scripts.js"></script>
 </body>
 </html>

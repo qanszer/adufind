@@ -1,7 +1,7 @@
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 *, *::before, *::after {
@@ -44,63 +44,6 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
-.hero.card {
-    display: flex;
-    padding: 2rem;
-    padding-bottom: 3rem;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 10vw 0 10vw;
-    margin-top: 11rem;
-    color: white;
-    font-size: 1.5rem;
-    background-color: #ffffff50;
-    border: 1px solid #b8b8b9;
-    border-radius: 2rem;
-    min-width: 371px;
-    width: 600px;
-    height: 364px;
-}
-
-@media (max-width: 600px) {
-    .hero.card {
-        width: 95%;
-        max-width: 371px;
-    }
-}
-
-.hero .title {
-    font-size: 4.3rem;
-    color: white;
-    font-weight: 900;
-    font-family: 'Open Sans';
-    text-align: center;
-    display: flex;
-    justify-content: center;
-
-}
-
-.hero .subtitle {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 0.4rem;
-    margin-top: -0.5rem;
-}
-
-.hero img {
-    margin-top: 1.7rem;
-    margin-bottom: 1.5rem;
-    height: 3rem;
-    width: 3rem;
-}
-
-.hero .slogan {
-    color: white;
-    font-size: 1.7rem;
-    font-weight: bold;
-}
 
 
 
@@ -147,6 +90,81 @@ body {
     text-align: center;
 }
 
+
+
+.hero.card {
+    display: flex;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10vw 0 10vw;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    color: white;
+    font-size: 1.3rem;
+    background-color: #ffffff50;
+    border: 1px solid #e3e4e7;
+    border-radius: 2rem;
+    min-width: 300px;
+    width: 600px;
+    height: auto;
+}
+
+@media (max-width: 360px) {
+    .hero.card {
+        width: 95%;
+        max-width: 300px;
+    }
+}
+
+.hero .title {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 900;
+    font-family: 'Open Sans';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero .subtitle {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+    margin-top: -0.5rem;
+}
+
+.hero img {
+    margin-top: 1.7rem;
+    margin-bottom: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.hero .slogan {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.hero.report-button, .hero.claim-button {
+    color: white;
+    background-color: #ffffff50;
+    border: 1px solid #e3e4e7;
+    border-radius: 20rem;
+    padding: 1.7rem 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+}
+
+
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -156,7 +174,7 @@ body {
   top: 0; /* Stay at the top */
   right: 0;
   background-color: #ffffff; 
-  border-left: 1px solid white;
+  /* border-left: 1px solid white; */
   color: #a0c5e4;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */

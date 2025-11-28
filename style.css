@@ -11,7 +11,7 @@ html {
 * {
 	margin: 0px;
 	padding: 0px;
-    font-family: 'Geist';
+    font-family: 'Geist', sans-serif;
  }
 
 a {
@@ -24,11 +24,6 @@ ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-}
-
-body {
-	display: flex;
-	flex-direction: column;
 }
 
 [id] { 
@@ -45,24 +40,66 @@ body {
         max-width: 100vw;
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-.hero.container {
+.hero.card {
     display: flex;
-    padding: 5%;
+    padding: 2rem;
+    padding-bottom: 3rem;
     align-items: center;
     flex-direction: column;
     margin: 0 10vw 0 10vw;
-    
+    margin-top: 11rem;
+    color: white;
+    font-size: 1.5rem;
+    background-color: #ffffff50;
+    border: 1px solid #b8b8b9;
+    border-radius: 2rem;
+    min-width: 371px;
+    width: 600px;
+    height: 364px;
+}
+
+@media (max-width: 600px) {
+    .hero.card {
+        width: 95%;
+        max-width: 371px;
+    }
 }
 
 .hero .title {
-    /* font-size: 13vw; */
-    font-size: 4.5rem;
+    font-size: 4.3rem;
     color: white;
-    margin-top: 10%;
-    font-weight: bold;
+    font-weight: 900;
     font-family: 'Open Sans';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero .subtitle {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+    margin-top: -0.5rem;
+}
+
+.hero img {
+    margin-top: 1.7rem;
+    margin-bottom: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.hero .slogan {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 
@@ -73,7 +110,7 @@ body {
     padding: 0.7rem 1rem;
     color: #ffffff;
     background-color: #ffffff50;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #e3e4e7;
     font-size: 24px;
     align-items: center;
     position: fixed;
@@ -116,9 +153,9 @@ body {
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
-  top: 4.2rem; /* Stay at the top */
+  top: 0; /* Stay at the top */
   right: 0;
-  background-color: #ffffff50; /* Black*/
+  background-color: #ffffff; 
   border-left: 1px solid white;
   color: #a0c5e4;
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -131,7 +168,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: white;
+  color: black;
   display: block;
   transition: 0.3s;
 }
@@ -161,3 +198,4 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+

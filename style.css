@@ -32,19 +32,9 @@ ul {
 }
 
 body {
-        background-image: url(./assets/v3-resized-blur-adu-bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 105vh;
-        width: 100%;
-        max-width: 100vw;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -93,30 +83,41 @@ body {
 
 
 
+.hero.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(./assets/v3-resized-blur-adu-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 105vh;
+
+    padding-top: 5rem;
+}
+
 .hero.card {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
     padding: 2rem;
     padding-bottom: 3rem;
-    align-items: center;
-    flex-direction: column;
     margin: 0 10vw 0 10vw;
     margin-top: 7rem;
     margin-bottom: 4rem;
+
     color: white;
     font-size: 1.3rem;
     background-color: #ffffff50;
+
     border: 1px solid #e3e4e7;
     border-radius: 2rem;
-    min-width: 300px;
-    width: 400px;
-    height: auto;
-}
 
-@media (max-width: 600px) {
-    .hero.card {
-        width: 95%;
-        max-width: 300px;
-    }
+    width: 85%;
+    max-width: 50rem;
+    height: auto;
 }
 
 .hero .title {
@@ -155,12 +156,13 @@ body {
     color: white;
     background-color: #ffffff50;
     border: 1px solid #e3e4e7;
-    border-radius: 20rem;
+    border-radius: 2rem;
     padding: 1.7rem 2.5rem;
     margin-bottom: 1rem;
     font-size: 1.3rem;
     font-weight: bold;
-    width: 300px;
+    max-width: 50rem;
+    width: 75%;
     text-align: center;
 }
 
@@ -184,12 +186,19 @@ body {
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 10px 8px 8px 8px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.4rem;
+  direction: rtl;
   color: black;
   display: block;
   transition: 0.3s;
+}
+
+.sidenav .item {
+  display: flex;
+  text-align: center;
+  padding-right: 25px;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -200,8 +209,8 @@ body {
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: -5px;
+  right: 10px;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -215,7 +224,7 @@ body {
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 1.4rem;}
 }
 
 
@@ -232,9 +241,11 @@ body {
 .form-popup {
     display: none;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(0, 0, 0, 0.6);
     z-index: 9;
 }
 
@@ -249,8 +260,9 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
-    width: 325px;
-    height: 450px;
+    max-width: 60rem;
+    width: 90%;
+    height: 40rem;
     padding: 1.5rem;
 
     background-color: #ffffff;

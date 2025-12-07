@@ -19,7 +19,7 @@
 
         <div id="mySidenav" class="right sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="item" href="#">Home</a>
+            <a class="item" href="./index.html">Home</a>
             <a class="item" href="#">Report</a>
             <a class="item" href="#">Claim</a>
             <a class="item open-button" onclick="openForm(), closeNav()" >Login</a>
@@ -32,38 +32,11 @@
 
     <div class="hero section">
         <div class="hero card">
-            <div class="title">AdU Find</div>
-            <div class="subtitle">Adamson University</div>
-            <img src="./assets/zoom-exclamation.svg">
-            <div class="slogan">Lost something?</div>
-            We'll help you find it.
-        </div>
-
-        <a class="hero report-button" href="./report.html" rel="noopener noreferrer">
-            Report a Found Item
-        </a>
-
-        <a class="hero claim-button" href="./claim.html" rel="noopener noreferrer">
-            Claim a Lost Item
-        </a>
-
-        <div class="form-card">
-            <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
-                    <h1>Report a Found Item</h1>
-
-                    <label for="email"><b><br>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
+            <div class="report title" id="weh">Report Form</div>
+            <div class="form-item">
+              Item Name
             </div>
         </div>
-        
     </div>
 
     <script src="scripts.js"></script>

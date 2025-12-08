@@ -11,14 +11,14 @@ html {
 * {
 	margin: 0px;
 	padding: 0px;
-    font-family: 'Geist', sans-serif;
+  font-family: 'Geist', sans-serif;
  }
 
 a {
 	text-decoration: none;
 	cursor: pointer;
 	user-select: none;
-    color: white;
+  color: white;
 }
 
 ul {
@@ -31,149 +31,145 @@ ul {
 	scroll-margin-top: 150px; 
 }
 
+::selection {
+    background-color: white;
+    color: rgb(59, 59, 59);
+}
+
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.7rem 1rem;
-    color: #ffffff;
-    background-color: #ffffff50;
-    border-bottom: 1px solid #e3e4e7;
-    font-size: 24px;
-    align-items: center;
-    position: fixed;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  color: #ffffff;
+  background-color: #ffffff50;
+  border-bottom: 1px solid #e3e4e7;
+  font-size: 24px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar .left {
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.2rem;
 }
 
 .navbar .left a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar .left img {
-    max-height: 2.7rem;
-    max-width: 2.7rem;
-    text-align: center;
-    margin-right: 0.7rem;
+  max-height: 2.7rem;
+  max-width: 2.7rem;
+  text-align: center;
+  margin-right: 0.7rem;
 }
 
 .navbar span {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar span img {
-    max-height: 3rem;
-    max-width: 3rem;
-    text-align: center;
+  max-height: 3rem;
+  max-width: 3rem;
+  text-align: center;
 }
 
 
 
 .hero.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    background-image: url(./assets/v3-resized-blur-adu-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 105vh;
+  background-image: url(./assets/v3-resized-blur-adu-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 105vh;
 
-    padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 .hero.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    padding: 2rem;
-    padding-bottom: 3rem;
-    margin: 0 10vw 0 10vw;
-    margin-top: 7rem;
-    margin-bottom: 4rem;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  margin: 0 10vw 0 10vw;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
 
-    color: white;
-    font-size: 1.3rem;
-    background-color: #ffffff50;
+  color: white;
+  font-size: 1.3rem;
+  background-color: #ffffff50;
 
-    border: 1px solid #e3e4e7;
-    border-radius: 2rem;
+  border: 1px solid #e3e4e7;
+  border-radius: 2rem;
 
-    width: 85%;
-    max-width: 50rem;
-    height: auto;
+  width: 85%;
+  max-width: 50rem;
+  height: auto;
 }
 
 .hero .title {
-    font-size: 3.5rem;
-    color: white;
-    font-weight: 900;
-    font-family: 'Open Sans';
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 900;
+  font-family: 'Open Sans';
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px 3px rgba(119, 119, 119, 0.53);
 
 }
 
 .hero .subtitle {
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 300;
-    letter-spacing: 0.4rem;
-    margin-top: -0.5rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.4rem;
+  margin-top: -0.5rem;
 }
 
 .hero img {
-    margin-top: 1.7rem;
-    margin-bottom: 1.5rem;
-    height: 3rem;
-    width: 3rem;
+  margin-top: 1.7rem;
+  margin-bottom: 1.5rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .hero .slogan {
-    color: white;
-    font-size: 1.4rem;
-    font-weight: bold;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .hero.report-button, .hero.claim-button {
-    color: white;
-    background-color: #ffffff50;
-    border: 1px solid #e3e4e7;
-    border-radius: 2rem;
-    padding: 1.7rem 2.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    max-width: 50rem;
-    width: 75%;
-    text-align: center;
-}
-
-
-.report.title {
-  font-size: 2.5rem;
-}
-
-.form-item {
-  align-self: self-start;
-  
+  color: white;
+  background-color: #ffffff50;
+  border: 1px solid #e3e4e7;
+  border-radius: 2rem;
+  padding: 1.7rem 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  max-width: 50rem;
+  width: 75%;
+  text-align: center;
 }
 
 
@@ -249,34 +245,34 @@ body {
 
 /* The popup form - hidden by default */
 .form-popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 9;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    max-width: 60rem;
-    width: 90%;
-    height: 40rem;
-    padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 60rem;
+  width: 90%;
+  height: 40rem;
+  padding: 1.5rem;
 
-    background-color: #ffffff;
-    border-radius: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
 }
 
 /* Full-width input fields */
@@ -315,3 +311,97 @@ body {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
+
+
+.report.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1rem;
+  padding-bottom: 3rem;
+  margin: 0 10vw 0 10vw;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+
+  color: white;
+  font-size: 1.2rem;
+  background-color: #ffffff50;
+  text-shadow: 1px 1px 3px rgba(119, 119, 119, 0.53);
+
+  border: 1px solid #e3e4e7;
+  border-radius: 1.5rem;
+
+  width: 90%;
+  max-width: 45rem;
+  height: auto;
+}
+
+.report-form p {
+  font-size: 2.2rem;
+  color: white;
+  font-weight: 900;
+  font-family: 'Open Sans';
+  text-align: center;
+  margin: 0.8rem 0 0.8rem 0;
+  text-shadow: 1px 1px 3px rgba(119, 119, 119, 0.53);
+}
+
+div.form-group {
+  padding: 2rem 0rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group .label {
+  margin-bottom: 0.3rem;
+}
+
+.form-group input {
+  color: rgb(56, 56, 56);
+  font-size: 1.3rem;
+  background-color: #ffffff50;
+
+  border: 1px solid #e3e4e7;
+  border-radius: 1rem;
+
+  height: 3.5rem;
+  padding: 0 1rem 0 1rem;
+}
+
+.form-group textarea {
+  color: rgb(56, 56, 56);
+  font-size: 1.3rem;
+  background-color: #ffffff50;
+
+  border: 1px solid #e3e4e7;
+  border-radius: 1rem;
+
+  padding: 0.7rem 1rem;
+}
+
+.form-group select {
+  color: rgb(56, 56, 56);
+  font-size: 1.3rem;
+  background-color: #ffffff50;
+
+  border: 1px solid #e3e4e7;
+  border-radius: 1rem;
+
+  height: 3.5rem;
+  padding: 0 1rem 0 1rem;
+}
+
+
+input:focus, textarea:focus, select:focus, input[type="date"]:focus {
+  outline: none;
+  border: 1px solid white;
+}
+
+input[type="date"] {
+  -webkit-tap-highlight-color: transparent;
+  
+}
+

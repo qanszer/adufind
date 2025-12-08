@@ -54,6 +54,8 @@ body {
   align-items: center;
   position: fixed;
   width: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar .left {

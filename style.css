@@ -172,6 +172,10 @@ body {
   text-align: center;
 }
 
+.hero.report-button:hover, .hero.claim-button:hover {
+  background-color: #ffffff60;
+}
+
 
 
 /* The side navigation menu */
@@ -320,7 +324,7 @@ body {
   flex-direction: column;
   align-items: center;
 
-  padding: 1rem;
+  padding: 2rem;
   padding-bottom: 3rem;
   margin: 0 10vw 0 10vw;
   margin-top: 7rem;
@@ -334,9 +338,13 @@ body {
   border: 1px solid #e3e4e7;
   border-radius: 1.5rem;
 
-  width: 90%;
+  width: 85%;
   max-width: 45rem;
   height: auto;
+}
+
+.report-form {
+  width: 100%;
 }
 
 .report-form p {
@@ -345,7 +353,7 @@ body {
   font-weight: 900;
   font-family: 'Open Sans';
   text-align: center;
-  margin: 0.8rem 0 0.8rem 0;
+  margin: 0.8rem 0 0 0;
   text-shadow: 1px 1px 3px rgba(119, 119, 119, 0.53);
 }
 
@@ -360,9 +368,9 @@ div.form-group {
 }
 
 .form-group input {
-  color: rgb(56, 56, 56);
+  color: rgb(255, 255, 255);
   font-size: 1.3rem;
-  background-color: #ffffff50;
+  background-color: #ffffff00;
 
   border: 1px solid #e3e4e7;
   border-radius: 1rem;
@@ -371,10 +379,18 @@ div.form-group {
   padding: 0 1rem 0 1rem;
 }
 
+.form-group input:hover, .form-group textarea:hover, .form-group select:hover {
+  background-color: #ffffff30;
+}
+
+.form-group input[type="time"] {
+  margin-bottom: 4rem;
+}
+
 .form-group textarea {
-  color: rgb(56, 56, 56);
+  color: white;
   font-size: 1.3rem;
-  background-color: #ffffff50;
+  background-color: #ffffff00;
 
   border: 1px solid #e3e4e7;
   border-radius: 1rem;
@@ -383,25 +399,50 @@ div.form-group {
 }
 
 .form-group select {
-  color: rgb(56, 56, 56);
+  color: rgb(255, 255, 255);
   font-size: 1.3rem;
-  background-color: #ffffff50;
+  background-color: #ffffff00;
 
   border: 1px solid #e3e4e7;
   border-radius: 1rem;
 
   height: 3.5rem;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem;
 }
 
+.form-group select option {
+  color: rgb(54, 54, 54);
+}
+
+.image-preview img#preview-img {
+  background-color: #ffffff00;
+  border: 1px solid #e3e4e7;
+  border-radius: 1rem;
+
+  width: 90%;
+  max-width: 45rem;
+  height: auto;
+}
 
 input:focus, textarea:focus, select:focus, input[type="date"]:focus {
   outline: none;
   border: 1px solid white;
 }
 
-input[type="date"] {
-  -webkit-tap-highlight-color: transparent;
-  
+.submit-btn {
+  color: #154682;
+  font-size: 1.3rem;
+  background-color: #ffffff99;
+
+  border: 1px solid #e3e4e7;
+  border-radius: 1rem;
+
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 1rem 0 1rem;
+  margin: 1.5rem 0 0;
 }
 
+.submit-btn:hover {
+  background-color: #ffffff;
+}

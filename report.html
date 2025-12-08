@@ -21,7 +21,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="item" href="./index.html">Home</a>
             <a class="item" href="#">Report</a>
-            <a class="item" href="#">Claim</a>
+            <a class="item" href="./claim.html">Claim</a>
             <a class="item open-button" onclick="openForm(), closeNav()" >Login</a>
             <a class="item" href="#">About</a>
         </div>
@@ -34,7 +34,9 @@
     <div class="hero section">
         <div class="report card">
             <form class="report-form" action="/submit-report" method="POST">
-                <p>Report Form</p>
+            
+                <p class="header">Report Form</p>
+                <p class="slogan" style="margin: 0; font-weight: normal; font-size: 1.2rem;">~1 min</p>
                 
                 <!-- Item Name -->
                 <div class="form-group">
@@ -97,15 +99,16 @@
                 
                 <!-- Image Upload -->
                 <div class="label" class="form-group">
-                    <label for="item-image">Item Image (Optional)</label>
+                    <label for="item-image">Image of Item</label>
                     <input 
                         type="file" 
                         id="item-image" 
                         name="item-image" 
                         accept="image/*"
+                        required
                     >
                     <div class="image-preview">
-                        <img src="" alt="Image preview" id="preview">
+                        <img id="preview-img" src="" alt="Image preview" id="preview" style="display: none;">
                     </div>
                 </div>
                 
@@ -131,7 +134,24 @@
                 </div>
                 
                 <!-- Submit Button -->
-                <button type="submit" class="submit-btn">SUBMIT</button>
+                <button type="submit" class="submit-btn" href="./index.html">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="form-card">
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Report a Found Item</h1>
+
+                <label for="email"><b><br>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
     </div>

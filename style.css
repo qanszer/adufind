@@ -39,6 +39,9 @@ ul {
 body {
   display: flex;
   flex-direction: column;
+
+  background: url(./assets/v3-resized-blur-adu-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 
@@ -54,7 +57,7 @@ body {
   align-items: center;
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(10px);
 }
 
@@ -95,10 +98,10 @@ body {
   flex-direction: column;
   align-items: center;
 
-  background-image: url(./assets/v3-resized-blur-adu-bg.jpg);
+  /* background-image: url(./assets/v3-resized-blur-adu-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center; */
   min-height: 105vh;
 
   padding-top: 5rem;
@@ -386,7 +389,7 @@ div.form-group {
 }
 
 .form-group input[type="time"] {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .form-group textarea {
@@ -432,7 +435,7 @@ input:focus, textarea:focus, select:focus, input[type="date"]:focus {
 }
 
 .submit-btn {
-  color: #154682;
+  color: rgb(58, 58, 58);
   font-size: 1.3rem;
   background-color: #ffffff99;
 
@@ -447,4 +450,5 @@ input:focus, textarea:focus, select:focus, input[type="date"]:focus {
 
 .submit-btn:hover {
   background-color: #ffffff;
+  color: black;
 }

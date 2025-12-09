@@ -32,7 +32,142 @@
     </div>
 
     <div class="hero section">
+        <div class="report card">
+            <form class="report-form" action="/submit-report" method="POST">
+            
+                <p class="header">Claim Request Form</p>
+                <p class="slogan" style="margin: 0; font-weight: normal; font-size: 1.2rem;">~1-2 min</p>
+                
+                <div class="claimer-name">
+                    <!-- Claimer First Name -->
+                    <div class="form-group">
+                        <label class="label" for="claimer-firstname">First Name</label>
+                        <input class="short-answer"
+                            type="text" 
+                            id="claimer-firstname" 
+                            name="claimer-firstname"
+                            required
+                        >
+                    </div>
 
+                    <!-- Claimer Last Name -->
+                    <div class="form-group">
+                        <label class="label" for="claimer-lastname">Last Name</label>
+                        <input class="short-answer"
+                            type="text" 
+                            id="claimer-lastname" 
+                            name="claimer-lastname"
+                            required
+                        >
+                    </div>
+                </div>
+                
+                
+                <!-- Claimer Email -->
+                <div class="form-group">
+                    <label class="label" for="claimer-email">Email</label>
+                    <input class="short-answer"
+                        type="email" 
+                        id="claimer-email" 
+                        name="claimer-email" 
+                        placeholder="email@example.com"
+                        required
+                    >
+                </div>
+
+                <!-- Item Name -->
+                <div class="form-group">
+                    <label class="label" for="item-name">Item Name</label>
+                    <input class="short-answer"
+                        type="text" 
+                        id="item-name" 
+                        name="item-name" 
+                        required
+                    >
+                </div>
+
+                <!-- Category -->
+                <div class="form-group">
+                    <label class="label" for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Please select</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="accessories">Accessories</option>
+                        <option value="documents">Documents</option>
+                        <option value="stationery">Stationery</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <!-- Item Description -->
+                <div class="form-group">
+                    <label class="label" for="item-description">Item Description</label>
+                    <textarea
+                        id="item-description" 
+                        name="item-description" 
+                        rows="3"
+                        required
+                    ></textarea>
+                </div>
+                
+                <!-- Date Lost -->
+                <div class="form-group">
+                    <label class="label" for="date-lost">Date Lost</label>
+                    <input 
+                        type="date" 
+                        id="date-lost" 
+                        name="date-lost" 
+                        placeholder="MM/DD/YYYY"
+                        required
+                    >
+                </div>
+
+                <!-- Verification Method -->
+                <div class="form-group">
+                    <label class="label" for="verification-method">Verification Method</label>
+                    <select id="verification-method" name="verification-method" required>
+                        <option value="" disabled selected>Please select</option>
+                        <option value="unlock_code">Can unlock password/PIN</option>
+                        <option value="photo_proof">Have photo of the item before losing it</option>
+                        <option value="unique_identifier">Can describe unique features of the item</option>
+                        <option value="contents">Can describe contents inside (wallet/bag)</option>
+                        <option value="serial_number">Know serial number or IMEI</option>
+                        <option value="student_id">Item has my name/student ID on it</option>
+                        <option value="other">Other (explain below)</option>
+                    </select>
+                </div>
+
+                <!-- Item Description -->
+                <div class="form-group">
+                    <label class="label" for="verification-details">(Optional) Verification Details</label>
+                    <textarea
+                        id="verification-details" 
+                        name="verification-details" 
+                        rows="3"
+                        required
+                    ></textarea>
+                </div>
+                
+                <!-- Image Upload -->
+                <div class="label" class="form-group">
+                    <label for="item-image" style="font-size: 1.4rem;">(Optional) Image of Item</label>
+                    <input 
+                        type="file" 
+                        id="item-image" 
+                        name="item-image" 
+                        accept="image/*"
+                        required
+                    >
+                    <div class="image-preview">
+                        <img id="preview-img" src="" alt="Image preview" id="preview" style="display: none;">
+                    </div>
+                </div>
+                
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">SUBMIT</button>
+            </form>
+        </div>
     </div>
 
     <div class="form-card">

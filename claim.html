@@ -42,7 +42,7 @@
             <form class="report-form" action="/submit-report" method="POST">
             
                 <p class="header">Claim Request Form</p>
-                <p class="slogan" style="margin: 0; font-weight: normal; font-size: 1.2rem;">~ 1-2 min</p>
+                <p class="slogan" style="margin: 0; font-weight: normal; font-size: 1.2rem;">~ 1-2 minutes</p>
                 
                 <div class="claimer-name">
                     <!-- Claimer First Name -->
@@ -170,7 +170,7 @@
                 </div>
                 
                 <!-- Submit Button -->
-                <button type="submit" class="submit-btn">SUBMIT</button>
+                <button type="submit" class="submit-btn" style="margin-top: 4rem;">SUBMIT</button>
             </form>
         </div>
     </div>
@@ -186,8 +186,11 @@
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
 
-                <button type="submit" class="btn">Login</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                <div class="buttons">
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    <button type="submit" class="btn">Login</button>
+                </div>
+                
             </form>
         </div>
     </div>

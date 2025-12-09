@@ -286,13 +286,16 @@ body {
   bottom: 0;
   right: 0;
   margin: auto;
-  max-width: 60rem;
+  max-width: 37rem;
   width: 90%;
   height: 40rem;
   padding: 1.5rem;
 
-  background-color: #ffffff;
+  color: white;
+  background-color: #ffffff50;
+  border: 1px solid #e3e4e7;
   border-radius: 1.5rem;
+  backdrop-filter: blur(4px);
 }
 
 /* Full-width input fields */
@@ -312,7 +315,7 @@ body {
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color: #a0c5e4;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -324,7 +327,7 @@ body {
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color: #bf616a;
 }
 
 /* Add some hover effects to buttons */
@@ -346,11 +349,11 @@ body {
   margin-top: 7rem;
   margin-bottom: 4rem;
 
-  color: white;
   font-size: 1.2rem;
-  background-color: #ffffff50;
   text-shadow: 1px 1px 3px rgba(119, 119, 119, 0.53);
 
+  color: white;
+  background-color: #ffffff50;
   border: 1px solid #e3e4e7;
   border-radius: 1.5rem;
 
@@ -369,7 +372,7 @@ body {
 }
 
 .report.card p.header {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: white;
   font-weight: 900;
   font-family: 'Open Sans';

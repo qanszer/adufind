@@ -33,7 +33,7 @@ ul {
 
 ::selection {
     background-color: white;
-    color: rgb(59, 59, 59);
+    color: rgb(85, 85, 85);
 }
 
 body {
@@ -57,8 +57,8 @@ body {
   align-items: center;
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .navbar .left {
@@ -89,6 +89,10 @@ body {
   max-height: 3rem;
   max-width: 3rem;
   text-align: center;
+}
+
+.navbar span img:hover {
+  cursor: pointer;
 }
 
 
@@ -157,7 +161,14 @@ body {
   width: 3rem;
 }
 
-.hero .slogan {
+.report.card img {
+  margin-top: 1.7rem;
+  margin-bottom: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.slogan {
   color: white;
   font-size: 1.4rem;
   font-weight: bold;
@@ -348,11 +359,16 @@ body {
   height: auto;
 }
 
+.hero .claim.card, .hero .reportt.card {
+  margin-top: 0;
+}
+
+
 .report-form {
   width: 100%;
 }
 
-.report-form p {
+.report.card p.header {
   font-size: 2.2rem;
   color: white;
   font-weight: 900;
@@ -360,6 +376,25 @@ body {
   text-align: center;
   margin: 0.8rem 0 0 0;
   text-shadow: 1px 1px 3px rgba(119, 119, 119, 0.53);
+}
+
+.report.card h1 {
+  font-family: 'Open Sans';
+}
+
+.report.card .subheader {
+  font-size: 1.9rem;
+  /* font-weight: bolder; */
+}
+
+.report.card p.slogan {
+  text-align: center;
+}
+
+.report.card div.subtext {
+  /* margin-top: 3rem; */
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 div.form-group {

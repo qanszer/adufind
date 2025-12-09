@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geist|Open+Sans">
   <title></title>
 </head>
-<body>
+<body style="background: url(./assets/v4-resized-blur-adu-bg.jpg) no-repeat center center fixed; background-size: cover;">
     <div class="navbar">
         <div class="left">
             <a href="./index.html">
@@ -36,7 +36,7 @@
             <form class="report-form" action="/submit-report" method="POST">
             
                 <p class="header">Claim Request Form</p>
-                <p class="slogan" style="margin: 0; font-weight: normal; font-size: 1.2rem;">~1-2 min</p>
+                <p class="slogan" style="margin: 0; font-weight: normal; font-size: 1.2rem;">~ 1-2 min</p>
                 
                 <div class="claimer-name">
                     <!-- Claimer First Name -->
@@ -142,6 +142,7 @@
                 <div class="form-group">
                     <label class="label" for="verification-details">(Optional) Verification Details</label>
                     <textarea
+                        style="margin-bottom: 3rem;"
                         id="verification-details" 
                         name="verification-details" 
                         rows="3"
@@ -150,7 +151,7 @@
                 </div>
                 
                 <!-- Image Upload -->
-                <div class="label" class="form-group">
+                <div class="label" class="form-group image">
                     <label for="item-image" style="font-size: 1.4rem;">(Optional) Image of Item</label>
                     <input 
                         type="file" 

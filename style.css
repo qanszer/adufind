@@ -61,6 +61,10 @@ body {
   -webkit-backdrop-filter: blur(3px);
 }
 
+.navbar:hover {
+  background-color: #ffffff60;
+}
+
 .navbar .left {
   display: flex;
   align-items: center;
@@ -490,3 +494,50 @@ input:focus, textarea:focus, select:focus, input[type="date"]:focus {
   background-color: #ffffff;
   color: black;
 }
+
+
+
+
+.staff.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+  margin: 0 10vw 0 10vw;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+
+  color: white;
+  font-size: 1.3rem;
+  background-color: #ffffff50;
+
+  border: 1px solid #e3e4e7;
+  border-radius: 2rem;
+
+  width: 85%;
+  max-width: 70rem;
+  height: auto;
+}
+
+.staff.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1rem;
+  padding-bottom: 1rem;
+  margin: 0 10vw 2rem 10vw;
+
+  color: white;
+  font-size: 1.3rem;
+  background-color: #ffffff50;
+
+  border: 1px solid #e3e4e7;
+  border-radius: 2rem;
+
+  width: 85%;
+  max-width: 70rem;
+  height: auto;
+}
+

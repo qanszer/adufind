@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="brief description about the website. this text matters because it often appears in Google search results under your page title, so it helps people decide whether to click on your site.">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <a href="./index.html">
+                <img src="./assets/adulogo-only.png">
+                AdU Find
+            </a>
+        </div>
+
+        <span onclick="openNav()">
+            <img src="./assets/menu.svg">
+        </span>
+    </div>
+
+    <div id="mySidenav" class="right sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="item" href="#">Home</a>
+        <a class="item" href="./report.html">Report</a>
+        <a class="item" href="./claim.html">Claim</a>
+        <a class="item open-button" onclick="openForm(), closeNav()" >Login</a>
+        <a class="item" href="#">About</a>
+    </div>
+
+    <div class="form-card">
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Staff Login</h1>
+
+                <label for="email"><b><br>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="hero section">
+        <div class="staff container">
+            <h1>Staff Dashboard</h1>
+        </div>
+
+        <div class="staff card">
+            <div class="claim-requests">
+
+            </div>
+        </div>
+
+        <div class="staff card">
+            <div class="item-inventory">
+                
+            </div>
+        </div>
+    </div>
+
+    
+  <script src="scripts.js"></script>
+</body>
+</html>

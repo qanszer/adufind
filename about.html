@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="AduFind" content="Adamson University's lost and found system. Reach out to us here to retrieve your lost item.">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geist|Open+Sans">
+  <title></title>
+</head>
+<body style="background: url(./assets/v4-resized-blur-adu-bg.jpg) no-repeat center center fixed; background-size: cover;">
+    <div class="navbar">
+        <div class="left">
+            <a href="./index.html">
+                <img src="./assets/adulogo-only.png">
+                AdU Find
+            </a>
+        </div>
+
+        <span onclick="openNav()">
+            <img src="./assets/menu.svg">
+        </span>
+    </div>
+
+    <div id="mySidenav" class="right sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="item" href="./index.html">Home</a>
+        <a class="item" href="./report.html">Report</a>
+        <a class="item" href="#">Claim</a>
+        <a class="item open-button" onclick="openForm(), closeNav()" >Login</a>
+        <a class="item" href="#">About</a>
+    </div>
+
+    <div class="hero section">
+        <div class="hero card about">
+            <h1>About AduFind</h1>
+            <p>AduFind is Adamson University's digital lost and found system <br>designed to help students and staff reunite with their lost belongings quickly and securely.
+
+            <br><br>Our blind claim system ensures privacy and security by not displaying a public list of lost items. Instead, you describe what you've lost, and our staff will verify if it matches our inventory.</p>
+            <h2>How It Works:</h2>
+            <ul>
+                <li>Found something? Report it through our system</li>
+                <li>Lost something? Submit a claim request with detailed description</li>
+                <li>Our staff will verify and contact you if there's a match</li>
+                <li>Pick up your item at the designated office</li>
+            </ul>
+            <p class="footnote">For inquiries, we don't care.<br>Pag binasa niyo to ma'am dapat perfect score namin</p>
+        </div>
+    </div>
+
+    <div class="form-card">
+        <div class="form-popup" id="myForm">
+            <form action="./staff.html" class="form-container">
+                <h1>Staff Login</h1>
+
+                <label for="email"><b><br>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email">
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw">
+
+                <button onclick="window.location.href='./staff.html'" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

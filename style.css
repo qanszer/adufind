@@ -540,3 +540,33 @@ input:focus, textarea:focus, select:focus, input[type="date"]:focus {
   max-width: 70rem;
   height: auto;
 }
+
+.about.card h1 {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.about.card p {
+  margin: 2rem 0 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+
+}
+
+.about.card h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about.card li {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  /* list-style-type: circle; */
+  text-align: center;
+}
+
+.about.card .footnote {
+  font-size: 1.2rem;
+  color: rgb(233, 233, 233);
+  margin-top: 3rem;
+}

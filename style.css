@@ -549,7 +549,7 @@ input:focus, textarea:focus, select:focus, input[type="date"]:focus {
 
 
 
-
+/* 
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -642,7 +642,7 @@ select:focus {
 .delete-btn svg { stroke: #ef4444; }
 
 /* Modal styles */
-.modal-overlay {
+/* .modal-overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -873,4 +873,4 @@ select:focus {
     .btn {
         width: 100%;
     }
-}
+} */

@@ -177,20 +177,17 @@
 
     <div class="form-card">
         <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
+            <form action="./staff.html" class="form-container">
                 <h1>Staff Login</h1>
 
                 <label for="email"><b><br>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <input type="text" placeholder="Enter Email" name="email">
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="psw">
 
-                <div class="buttons">
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                    <button type="submit" class="btn">Login</button>
-                </div>
-                
+                <button onclick="window.location.href='./staff.html'" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
     </div>

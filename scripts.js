@@ -38,3 +38,7 @@ fileInput.addEventListener('change', function(event) {
         reader.readAsDataURL(file);  // Read file as data URL
     }
 });
+
+function redirectToPage() {
+        window.location.href = './staff.html';
+    }

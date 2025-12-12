@@ -1,7 +1,5 @@
 # AduFind
 
----
-
 ## What is this?
 
 This is a lost & found system project for the subject 'Database Management System' at Adamson University. Its purpose is to digitalize the current lost & found system of AdU for improved convenience, accuracy, and scalability.
